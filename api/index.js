@@ -11,7 +11,7 @@ const errorMiddleware = require('../middlewares/error-middleware');
 
 //tackle the cors operation
 const corOptions={
-    origin: "http://localhost:5173",
+    origin: "https://gfst-server.vercel.app",
     methods:"GET,POST,PATCH,DELETE,HEAD",
     credential:true,
 };
