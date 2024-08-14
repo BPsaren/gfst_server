@@ -26,6 +26,10 @@ app.use("/api/auth",authRoute);
 //admin only have access this middleware
 app.use("/api/admin", adminRoute);
 
+app.get("/api/test",(req,res)=>{
+    res.send("server running")
+})
+
 app.use(errorMiddleware);
 const PORT =3000;
 
@@ -34,6 +38,8 @@ app.listen(PORT, () => {
     console.log(`listening on port number ,${PORT}`);
 });
 });
+
+module.exports=app;
 
 
 
